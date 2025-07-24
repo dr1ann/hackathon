@@ -49,23 +49,35 @@ export default function Dashboard() {
       <aside className="w-64 bg-white shadow-md">
         <div className="p-6 text-xl font-bold text-[#3030ff]">Name</div>
         <nav className="px-6 space-y-4 mt-4 text-[15px] font-medium">
-          <a href="#"   className="flex items-center space-x-2 text-gray-600 hover:text-[#3030ff] hover:bg-[#eaeaff] px-3 py-2 rounded-md transition-colors">
+          <a
+            href="#"
+            className="flex items-center space-x-2 text-gray-600 hover:text-[#3030ff] hover:bg-[#eaeaff] px-3 py-2 rounded-md transition-colors"
+          >
             <LayoutDashboard className="w-5 h-5" />
             <span>Dashboard</span>
           </a>
+
           <button
             type="button"
             onClick={() => navigate('/maps')}
-            className="flex items-center space-x-2 text-gray-600 hover:text-[#3030ff] w-full text-left"
+            className="flex items-center space-x-2 text-gray-600 hover:text-[#3030ff] hover:bg-[#eaeaff] px-3 py-2 rounded-md w-full text-left transition-colors"
           >
             <Map className="w-5 h-5" />
             <span>Maps</span>
           </button>
-          <a href="#" className="flex items-center space-x-2 text-gray-600 hover:text-[#3030ff]">
+
+          <a
+            href="#"
+            className="flex items-center space-x-2 text-gray-600 hover:text-[#3030ff] hover:bg-[#eaeaff] px-3 py-2 rounded-md transition-colors"
+          >
             <User2 className="w-5 h-5" />
             <span>Drivers</span>
           </a>
-          <a href="#" className="flex items-center space-x-2 text-gray-600 hover:text-[#3030ff]">
+
+          <a
+            href="#"
+            className="flex items-center space-x-2 text-gray-600 hover:text-[#3030ff] hover:bg-[#eaeaff] px-3 py-2 rounded-md transition-colors"
+          >
             <Truck className="w-5 h-5" />
             <span>Vehicles</span>
           </a>
