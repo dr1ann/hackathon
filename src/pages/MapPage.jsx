@@ -15,7 +15,7 @@ const mockDestination = { lat: 11.185, lng: 125.010 } // Point B (drop-off)
 
 export default function MapPage() {
   const { isLoaded } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyBYKY5CkAeXErPuGY0WvDI8tW5o3-mG9ZA',
+    googleMapsApiKey: 'AIzaSyBYKY5CkAeXErPuGY0WvDI8tW5o3-mG9ZA', // secure this key
   })
 
   const [riderLocation, setRiderLocation] = useState(null)
@@ -77,7 +77,7 @@ export default function MapPage() {
         {riderLocation && (
           <Marker position={riderLocation}  label={{
             text: 'D',
-            color: '#FFFF',
+            color: '#FFFF', // Blue color for the label
             fontWeight: 'bold',
             fontSize: '14px',
           }} />
@@ -87,7 +87,7 @@ export default function MapPage() {
           position={mockPickup}
           label={{
             text: 'A',
-            color: '#FFFF',
+            color: '#FFFF', // Blue color for the label
             fontWeight: 'bold',
             fontSize: '14px',
           }}
@@ -97,7 +97,7 @@ export default function MapPage() {
           position={mockDestination}
           label={{
             text: 'B',
-            color: '#FFFF',
+            color: '#FFFF', // Green color for the label
             fontWeight: 'bold',
             fontSize: '14px',
           }}
